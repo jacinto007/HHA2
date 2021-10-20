@@ -12,7 +12,18 @@ import ctypes  # An included library with Python install.
 import pymsgbox
 
 chooseserver = pymsgbox.prompt('Choose server for the Automated Test, type: \n \n 1. Live (geekers) \n 2. QA (unitest)', 'Healthcare Automation')
-testcase = pymsgbox.prompt('Choose Test Case, type: \n \n 1. Basic Testing \n > Patient Admission \n > Complete OASIS Partly \n > Create 2 RN Tasks (IV Visit and Supervisory Visit) \n > Transfer \n > ROC \n > Recert \n > DC \n \n 2. Add New Episode \n \n 3. Pre-admit a MEDICARE patient  \n \n 4. Pre-admit a NON-MEDICARE patient \n \n 5. Woundcare Process \n \n 6. Completing Authorization \n \n 7. Admit a Patient and Add Communication Notes \n \n 8. Other Management Process', 'Healthcare Automation')
+testcase = pymsgbox.prompt('Choose Test Case, type:'
+                           '\n \n 1. Basic Testing \n'
+                           '> Patient Admission \n'
+                           '> Plotting All task \n'
+                           '> Transfer \n > ROC \n > Recert \n > DC \n \n'
+                           '2. Add New Episode \n \n'
+                           '3. Pre-admit a MEDICARE patient  \n \n'
+                           '4. Pre-admit a NON-MEDICARE patient \n \n'
+                           '5. Woundcare Process \n \n'
+                           '6. Completing Authorization \n \n'
+                           '7. Admit a Patient and Add All Communication Notes \n \n'
+                           '8. Other Management Process', 'Healthcare Automation')
 
 ####JACCKKK TEST
 if chooseserver == "1":
